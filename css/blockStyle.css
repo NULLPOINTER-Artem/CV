@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+}
+
+.container {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+    height: 400px;
+    perspective: 500px;
+}
+
+.cube {
+    display: inline-block;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+}
+
+.side {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    font: normal 14px Arial;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: translateZ(25px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.button {
+    transform: rotateX(-90deg) translateZ(25px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(25px);
+}
