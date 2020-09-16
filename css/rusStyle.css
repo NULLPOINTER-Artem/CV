@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    background: url("../img/background.png");
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background: url("../img/background3.jpg");
+    background-size: 800px 1200px;
+    margin: 50px auto 0 auto;
+    max-width: 800px;
+    box-shadow: 0 0 50px black;
+}
+
+.switcher {
+    display: inline-flex;
+}
+
+.switcher a {
+    text-decoration: none;
+    color: black;
+}
+
+.switcher span:nth-child(2) {
+    margin: 0 0 0 100px;
+}
+.switcher span:nth-child(3) {
+    margin: 0 0 0 10px;
+}
+
+/* ul in HEADER*/
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    text-decoration-line: none;
+    color: #065C6F;
+}
+
+.contacts li:nth-child(1) {
+    margin: 0px 0px 10px 0px;
+	position: relative;
+    padding: 0px 0px 0px 30px;
+    font-size: 21px;
+}
+
+.contacts li:nth-child(1)::before {
+    content: '';
+	background: url('../img/pin.png') 0 0 no-repeat;
+	width: 20px;
+	height: 30px;
+	position: absolute;
+	top: -3px;
+	left: 0px;
+}
+
+.contacts li:nth-child(2) {
+    margin: 0px 0px 10px 0px;
+	position: relative;
+    padding: 0px 0px 0px 30px;
+    font-size: 21px;
+}
+
+.contacts li:nth-child(2)::before {
+    content: '';
+	background: url('../img/phone.png') 0 0 no-repeat;
+	width: 23px;
+	height: 24px;
+	position: absolute;
+	top: 1px;
+	left: 0px;
+}
+
+.contacts li:nth-child(3) {
+    margin: 0px 0px 10px 0px;
+	position: relative;
+    padding: 0px 0px 0px 30px;
+    font-size: 21px;
+}
+
+.contacts li:nth-child(3)::before {
+    content: '';
+	background: url('../img/gmail.png') 0 0 no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.contacts li:nth-child(4) {
+    margin: 0px 0px 10px 0px;
+	position: relative;
+    padding: 0px 0px 0px 30px;
+    font-size: 21px;
+}
+
+.contacts li:nth-child(4)::before {
+    content: '';
+	background: url('../img/githib.png') 0 0 no-repeat;
+	width: 50px;
+	height: 35px;
+	position: absolute;
+	top: -4px;
+	left: -12px;
+}
+
+.contacts li a:nth-child(2) {
+    position: relative;
+    font-size: 21px;
+    margin: 0 0 0 30px;
+}
+
+.contacts li a:nth-child(2)::before {
+    content: '';
+	background: url('../img/linkedIn.png') 0 0 no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	left: -30px;
+}
+
+
+/* RightSide*/
+
+.rightSide li:nth-child(1) {
+    position: relative;
+    margin: 0 0 0 15px;
+}
+
+.rightSide li:nth-child(1)::before {
+    content: '';
+    background: url("../img/objective.png") 0 0 no-repeat;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 14px;
+    left: -15px;
+}
+
+.rightSide li:nth-child(2) {
+    position: relative;
+    margin: 0 0 0 15px;
+}
+
+.rightSide li:nth-child(2)::before {
+    content: '';
+    background: url("../img/summary2.png") 0 0 no-repeat;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 14px;
+    left: -15px;
+}
+
+.rightSide li:nth-child(3) {
+    position: relative;
+    margin: 0 0 0 15px;
+}
+
+.rightSide li:nth-child(3)::before {
+    content: '';
+    background: url("../img/experience.png") 0 0 no-repeat;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: -15px;
+}
+
+.rightSide li:nth-child(4) {
+    position: relative;
+    margin: 0 0 0 15px;
+}
+
+.rightSide li:nth-child(4)::before {
+    content: '';
+    background: url("../img/education1.png") 0 0 no-repeat;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: -15px;
+}
+
+.rightSide span {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+#line2 {
+    height: 90%;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 15px;
+    width: 1px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 14fr;
+    margin: 50px auto;
+    max-width: 800px;
+    color: black;
+    background: url("../img/background.png");
+    margin-bottom: -50px;
+    box-shadow: 0 0 50px black;
+}
+
+.header p {
+    display: inline-block;
+    margin: 25px 0 20px 150px;
+} 
+
+.avatar {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.name {
+    font-size: 28px;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+}
+
+.leftSide {
+    color: whitesmoke;
+    margin-right: -120px;
+}
+
+#line {
+    height: 500px;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin: 15px 150px 0 150px;
+}
+
+.rightSide {
+    color: whitesmoke;
+    margin-left: -120px;
+}
+
+.rightSide li span {
+    line-height: 140%;
+}
+
+/* ul li for skills */
+
+.skills span {
+    display: inline-block;
+    margin: 6% 0 0 25%;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 25% 0 0 0;
+}
+
+.leftSide a {
+    color: wheat;
+}
+
+.leftSide li:nth-child(1) {
+    position: relative;
+    margin: 35px 0 0 0;
+}
+
+.leftSide li:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    background: url("../img/skills1.png") 0 0 no-repeat;
+    width: 60px;
+    height: 45px;
+    top: -45px;
+    left: 38%;
+}
+
+.leftSide li:nth-child(2) {
+    position: relative;
+    margin: 42% 0 0 0;
+}
+
+.leftSide li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    background: url("../img/course.png") 0 0 no-repeat;
+    width: 50px;
+    height: 60px;
+    top: -70px;
+    left: 43%;
+}
+
+.course span {
+    display: inline-block;
+    margin: 1% 0 0 12%;
+    line-height: 141%;
+}
+
+.leftSide li:nth-child(3) {
+    position: relative;
+    margin: 10% 0 0 30%;
+}
+
+.leftSide li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    background: url("../img/languages2.png") 0 0 no-repeat;
+    width: 30px;
+    height: 25px;
+    top: -7px;
+    left: -27%;
+}
+
+.leftSide li:nth-child(4) {
+    position: relative;
+    margin: 5% 0 0 30%;
+}
+
+.leftSide li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    background: url("../img/maritalStatus2.png") 0 0 no-repeat;
+    width: 40px;
+    height: 25px;
+    top: -5px;
+    left: -29%;
+}
+
+.leftSide li:nth-child(5) {
+    position: relative;
+    margin: 5% 0 0 30%;
+}
+
+.leftSide li:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    background: url("../img/nationality2.png") 0 0 no-repeat;
+    width: 30px;
+    height: 40px;
+    top: -5px;
+    left: -25%;
+}
+
+.game {
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    max-width: 800px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: black;
+}
+
+#text {
+    -webkit-animation: text 2s linear infinite;
+    animation: text 2s linear infinite;
+}
+
+@-webkit-keyframes text {
+    0% { color: rgb(128, 0, 0); }
+    50% { color: rgb(183, 65, 14); }
+    100% { color: rgb(128, 0, 0); }
+}
+
+@keyframes text {
+    0% { color: rgb(128, 0, 0); }
+    50% { color: rgb(183, 65, 14); }
+    100% { color: rgb(128, 0, 0); }
+}

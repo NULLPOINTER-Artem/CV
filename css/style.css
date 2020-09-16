@@ -18,6 +18,22 @@ body {
     box-shadow: 0 0 50px black;
 }
 
+.switcher {
+    display: inline-flex;
+}
+
+.switcher a {
+    text-decoration: none;
+    color: black;
+}
+
+.switcher span:nth-child(2) {
+    margin: 0 0 0 100px;
+}
+.switcher span:nth-child(3) {
+    margin: 0 0 0 10px;
+}
+
 /* ul in HEADER*/
 
 ul li {
